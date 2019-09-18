@@ -1,6 +1,5 @@
 
 @import "../partial";
-@import "../components/formSuccess/formSuccess.scss";
 
 
     /* LAYOUT */
@@ -12,32 +11,31 @@
   display: grid;
   grid-template-columns: auto 50em auto;
   grid-template-rows: auto 46em auto;
-}
 
-    /* Header */
+   /* Header */
 
-.form {
+  &__form {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   width: 100%;
   height: 100%;
   position: relative;
-  &__heading {
-    font-family: $primaryFont;
-    font-size: 3.1em;
-    height: auto;
-    margin: 6% 0 0 0;
-    color: $textPrimaryColor;
-    text-align: center;
+    &--heading {
+      font-family: $primaryFont;
+      font-size: 3.6em;
+      height: auto;
+      margin: .7em 0 4rem 0;
+      color: $textPrimaryColor;
+      text-align: center;
+    }
+    &--reset {
+      display: block;
+      font-family: $primaryFont;
+      font-size: 1.7em;
+      text-align: center;
+      width: 50%;
+      height: auto;
+      margin: 1.5em auto 0;
+    }
   }
-  &__reset {
-    display: block;
-    font-family: $primaryFont;
-    font-size: 1.7em;
-    text-align: center;
-    width: 50%;
-    height: auto;
-    margin: 1.5em auto 0;
-  }
-  @include success;
 }

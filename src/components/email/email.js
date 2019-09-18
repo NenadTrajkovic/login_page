@@ -3,16 +3,16 @@ import React from "react";
 import "./email.scss";
 
 
-const Email = ({email_input, emailFunc}) => {
+const Email = ({emailFunc}) => {
   return (
     <span>
       <label  htmlFor="userName"></label>
         <input  className="email"
                 type="email" 
                 id="userName" 
-                value={email_input}
+                name="email"
                 onChange={emailFunc}
-                required
+                minLength="8" required
                 placeholder="Email address" 
           />
     </span>

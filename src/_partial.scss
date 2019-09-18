@@ -11,10 +11,10 @@ $colorSuccess: #4BB543;
 $colorError: #FF0000;
 
 @mixin border-radius {
-  border-top-left-radius: 2em 50%;
-  border-bottom-left-radius: 2em 50%;
-  border-top-right-radius: 2em 50%;
-  border-bottom-right-radius: 2em 50%;
+  border-top-left-radius: 3rem 50%;
+  border-bottom-left-radius: 3rem 50%;
+  border-top-right-radius: 3rem 50%;
+  border-bottom-right-radius: 3rem 50%;
 }
 
 @mixin error {

@@ -3,16 +3,16 @@ import React from "react";
 import "./password.scss";
 
 
-const Password = ({password_input, passwordFunc}) => {
+const Password = ({passwordFunc}) => {
   return (
     <span>
       <label  htmlFor="pass"></label>
       <input  className="password"
               type="password" 
               id="pass"
-              value={password_input}
+              name="password"
               onChange={passwordFunc}
-              required 
+              minLength="8" required 
               placeholder="Password" 
         />
     </span>
