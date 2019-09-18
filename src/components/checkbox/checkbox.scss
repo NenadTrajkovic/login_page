@@ -1,0 +1,51 @@
+
+@import "../../partial";
+
+
+label {
+  font-family: $MainFont;
+  color: $TextColor;
+  font-size: 1.7em;
+  font-weight: 550;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  cursor: pointer;
+  padding: 0 0 0 6.7%;
+  margin: .2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  width: 1.45em;
+  height: 1.3em;
+  display: inline-block;
+  padding-left: .27em;
+  padding-bottom: 1.26em;
+  margin: 0 .5em 0 0;
+  content: "\2714";
+  border: .08em solid $TextColor;
+  background-color: $WhiteColor;
+  border-radius: .4em; 
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: $WhiteColor;
+  color: $TextColor;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(.5);
+}
+
+.checkbox {
+  display: block;
+  margin: 1.8em 0 0 0;
+}

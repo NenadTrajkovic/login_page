@@ -1,0 +1,17 @@
+
+@import "../../partial";
+
+.email {
+  width: 85%;
+  height: 4em;
+  display: flex;
+  margin: 3.5em auto 0;
+  border: .1em solid $TextColor;
+  @include border-radius;
+}
+
+.email:focus {
+  border: .1em solid $InputColor;
+}
+
+@include error;

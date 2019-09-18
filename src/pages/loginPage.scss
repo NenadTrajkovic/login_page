@@ -1,0 +1,43 @@
+
+@import "../partial";
+@import "../components/formSuccess/formSuccess.scss";
+
+
+    /* LAYOUT */
+
+.wrapper {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: $BackgroundColor;
+  display: grid;
+  grid-template-columns: auto 50em auto;
+  grid-template-rows: auto 46em auto;
+}
+
+    /* Header */
+
+.form {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &__heading {
+    font-family: $MainFont;
+    font-size: 3.1em;
+    height: auto;
+    margin: 6% 0 0 0;
+    color: $TextColor;
+    text-align: center;
+  }
+  &__reset {
+    display: block;
+    font-family: $MainFont;
+    font-size: 1.7em;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: 1.5em auto 0;
+  }
+  @include success;
+}

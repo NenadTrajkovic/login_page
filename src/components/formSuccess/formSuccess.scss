@@ -1,0 +1,30 @@
+
+@import "../../partial";
+@import "../button//button.scss";
+
+
+@mixin success {
+  &__success {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: $BackgroundColor;
+    position: absolute;
+    top: 0;
+    &--heading {
+      font-family: $MainFont;
+      font-weight: bold;
+      font-size: 2.7em;
+      color: $ColorSuccess;
+      margin: 3em 0 0 0;
+    }
+    &--subHeading {
+      font-family: $MainFont;
+      font-weight: bold;
+      font-size: 2em;
+      color: $ColorSuccess;
+      margin: 3em 0 3em 0;
+    }
+  }
+}
+

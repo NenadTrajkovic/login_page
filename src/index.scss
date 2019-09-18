@@ -1,0 +1,79 @@
+
+@import "./partial";
+@import "./components/reset/reset.scss";
+
+     /* BASE */
+
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  padding-left: 4.3%;
+  letter-spacing: .05em;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+:focus {
+  outline: .04em dotted $TextColor;
+}
+
+
+

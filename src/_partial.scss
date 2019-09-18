@@ -1,0 +1,32 @@
+
+
+$MainFont: Arial;
+
+$WhiteColor: #ffffff;
+$BackgroundColor: #fcf8f2;
+$TextColor: #968d7c; 
+$ButtonBGColor: #100b5f;
+$InputColor: #0e00ff;
+$ColorSuccess: #4BB543;
+$RedColor: #FF0000;
+
+@mixin border-radius {
+  border-top-left-radius: 2em 50%;
+  border-bottom-left-radius: 2em 50%;
+  border-top-right-radius: 2em 50%;
+  border-bottom-right-radius: 2em 50%;
+}
+
+@mixin error {
+  .error {
+    width: 85%;
+    height: 4em;
+    display: flex;
+    margin: 3.5em auto 0;
+    border: .2em solid $RedColor;
+    @include border-radius;
+  }
+  #pass.error {
+    margin: 1.8em auto 0;
+  }
+}

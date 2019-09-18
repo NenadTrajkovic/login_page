@@ -1,0 +1,11 @@
+
+@import "../../partial";
+
+.form__reset {
+  font-family: $MainFont;
+  color: $InputColor;
+}
+
+.form__reset:hover {
+  cursor: pointer;
+}
