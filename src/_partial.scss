@@ -1,14 +1,14 @@
 
 
-$MainFont: Arial;
+$primaryFont: Arial;
 
-$WhiteColor: #ffffff;
-$BackgroundColor: #fcf8f2;
-$TextColor: #968d7c; 
-$ButtonBGColor: #100b5f;
-$InputColor: #0e00ff;
-$ColorSuccess: #4BB543;
-$RedColor: #FF0000;
+$backgroundPrimaryColor: #fcf8f2;
+$textPrimaryColor: #968d7c; 
+$buttonBGColor: #100b5f;
+$inputBorderColor: #0e00ff;
+$colorNeutral: #ffffff;
+$colorSuccess: #4BB543;
+$colorError: #FF0000;
 
 @mixin border-radius {
   border-top-left-radius: 2em 50%;
@@ -23,7 +23,7 @@ $RedColor: #FF0000;
     height: 4em;
     display: flex;
     margin: 3.5em auto 0;
-    border: .2em solid $RedColor;
+    border: .2em solid $colorError;
     @include border-radius;
   }
   #pass.error {

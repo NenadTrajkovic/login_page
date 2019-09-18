@@ -8,21 +8,21 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: $BackgroundColor;
+    background-color: $backgroundPrimaryColor;
     position: absolute;
     top: 0;
     &--heading {
-      font-family: $MainFont;
+      font-family: $primaryFont;
       font-weight: bold;
       font-size: 2.7em;
-      color: $ColorSuccess;
+      color: $colorSuccess;
       margin: 3em 0 0 0;
     }
     &--subHeading {
-      font-family: $MainFont;
+      font-family: $primaryFont;
       font-weight: bold;
       font-size: 2em;
-      color: $ColorSuccess;
+      color: $colorSuccess;
       margin: 3em 0 3em 0;
     }
   }

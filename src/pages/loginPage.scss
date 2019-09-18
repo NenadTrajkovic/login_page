@@ -8,7 +8,7 @@
 .wrapper {
   max-width: 100%;
   min-height: 100vh;
-  background-color: $BackgroundColor;
+  background-color: $backgroundPrimaryColor;
   display: grid;
   grid-template-columns: auto 50em auto;
   grid-template-rows: auto 46em auto;
@@ -23,16 +23,16 @@
   height: 100%;
   position: relative;
   &__heading {
-    font-family: $MainFont;
+    font-family: $primaryFont;
     font-size: 3.1em;
     height: auto;
     margin: 6% 0 0 0;
-    color: $TextColor;
+    color: $textPrimaryColor;
     text-align: center;
   }
   &__reset {
     display: block;
-    font-family: $MainFont;
+    font-family: $primaryFont;
     font-size: 1.7em;
     text-align: center;
     width: 50%;

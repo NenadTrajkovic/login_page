@@ -6,12 +6,12 @@
   height: 4em;
   display: flex;
   margin: 3.5em auto 0;
-  border: .1em solid $TextColor;
+  border: .1em solid $textPrimaryColor;
   @include border-radius;
 }
 
 .email:focus {
-  border: .1em solid $InputColor;
+  border: .1em solid $inputBorderColor;
 }
 
 @include error;

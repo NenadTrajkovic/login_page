@@ -2,8 +2,8 @@
 @import "../../partial";
 
 .form__reset {
-  font-family: $MainFont;
-  color: $InputColor;
+  font-family: $primaryFont;
+  color: $inputBorderColor;
 }
 
 .form__reset:hover {

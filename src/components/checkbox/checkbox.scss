@@ -3,8 +3,8 @@
 
 
 label {
-  font-family: $MainFont;
-  color: $TextColor;
+  font-family: $primaryFont;
+  color: $textPrimaryColor;
   font-size: 1.7em;
   font-weight: 550;
 }
@@ -28,8 +28,8 @@ input[type=checkbox] + label:before {
   padding-bottom: 1.26em;
   margin: 0 .5em 0 0;
   content: "\2714";
-  border: .08em solid $TextColor;
-  background-color: $WhiteColor;
+  border: .08em solid $textPrimaryColor;
+  background-color: $colorNeutral;
   border-radius: .4em; 
   vertical-align: bottom;
   color: transparent;
@@ -37,8 +37,8 @@ input[type=checkbox] + label:before {
 }
 
 input[type=checkbox]:checked + label:before {
-  background-color: $WhiteColor;
-  color: $TextColor;
+  background-color: $colorNeutral;
+  color: $textPrimaryColor;
 }
 
 input[type=checkbox] + label:active:before {
