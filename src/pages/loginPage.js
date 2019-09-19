@@ -27,6 +27,15 @@ class LoginPage extends Component {
     });
   }
 
+  reset = () => {
+    const resetModal = document.querySelector(".wrapper__formReset");
+    if( resetModal.style.display === "none" || !resetModal.style.display ) {
+      resetModal.style.display = "block";
+    } else {
+      resetModal.style.display = "none";
+    }
+  }
+
   submit = (e) => {
     e.preventDefault();
     this.setState({
@@ -37,8 +46,8 @@ class LoginPage extends Component {
     console.log(` eMail: ${this.state.email} \n password: ${this.state.password} \n Remember me: ${this.state.checked}` );
   }
 
-  render = () => {
-
+  render = () => { 
+    
     return (
       <div className="wrapper">
         <form className="wrapper__form" onSubmit={this.submit} name="form" >
@@ -53,7 +62,12 @@ class LoginPage extends Component {
 
             <Button />
 
-            <a className="wrapper__form--reset" href="#" >Reset your login credentials</a>
+            <div className="wrapper__formReset">
+              
+            </div>
+
+            <a className="wrapper__form--reset" onClick={this.reset} href="#">Reset your login credentials</a>
+            
         </form>
       </div>
     )

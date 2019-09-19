@@ -9,6 +9,7 @@
   min-height: 100vh;
   background-color: $backgroundPrimaryColor;
   display: grid;
+  position: relative;
   grid-template-columns: auto 50em auto;
   grid-template-rows: auto 46em auto;
 
@@ -37,5 +38,21 @@
       height: auto;
       margin: 1.5em auto 0;
     }
+  }
+
+    /* Form reset */
+
+  &__formReset {
+    width: 100%;
+    height: 88%;
+    display: none;
+    background-color: $backgroundPrimaryColor;
+    border: none;
+    border-radius: 1em;
+    box-shadow: .03em .08em .5em $colorShadow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
